@@ -9,13 +9,12 @@ import CartPage from "./pages/CartPage";
 import LogInPage from "./pages/LogInPage";
 import RegisterPage from "./pages/RegisterPage";
 import ProfilePage from "./pages/ProfilePage";
-import CarouselBG from "./components/CarouselBG";
 
 const App = () => {
   return (
     <Router>
       <Header></Header>
-      <CarouselBG />
+
       <main className="py-3">
         <Container>
           <Route path="/" component={HomePage} exact />

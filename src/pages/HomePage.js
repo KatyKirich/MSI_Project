@@ -4,6 +4,8 @@ import { Row, Col } from "react-bootstrap";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
 import Product from "../components/Product";
+import Company from "../components/Company";
+import CompanyInfo from "../components/CompanyInfo";
 
 import { listProducts } from "../actions/productActions";
 
@@ -19,7 +21,9 @@ const HomePage = () => {
 
   return (
     <>
-      <h1>Latest Products</h1>
+      <Company />
+      <CompanyInfo />
+      <h1 className="my-5 text-center">Latest Products</h1>
       {loading ? (
         <Loader />
       ) : error ? (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 
-const CarouselBG = () => {
+const Company = () => {
   return (
     <div
       className=" d-flex justify-content-center align-items-center"
@@ -35,4 +35,4 @@ const CarouselBG = () => {
   );
 };
 
-export default CarouselBG;
+export default Company;
