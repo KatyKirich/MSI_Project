@@ -9,6 +9,7 @@ import CartPage from "./pages/CartPage";
 import LogInPage from "./pages/LogInPage";
 import RegisterPage from "./pages/RegisterPage";
 import ProfilePage from "./pages/ProfilePage";
+import ShippingPage from "./pages/ShippingPage";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <main className="py-3">
         <Container>
           <Route path="/" component={HomePage} exact />
+          <Route path="/shipping" component={ShippingPage} exact />
           <Route path="/register" component={RegisterPage} exact />
           <Route path="/profile" component={ProfilePage} exact />
           <Route path="/login" component={LogInPage} exact />
